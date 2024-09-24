@@ -1,0 +1,37 @@
+
+<head>
+
+<title>Validation Form</title>
+
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js"></script>
+
+</head>
+
+<div class="layoutDiv">
+
+    <div class="mainDiv">
+
+        <div class="inputDiv">
+            <label class="inputLabel">Name:</label>
+            <input name="name" type="text" pattern="^[a-zA-Z]+$" class="inputField" id="nameInput" placeholder="Enter Your Name" required>
+        </div>
+        <label class="inputValidation invalid" id="nameValidation" data-validation="false"></label>
+
+        <div class="inputDiv">
+            <label class="inputLabel">Email:</label>
+            <input name="email" type="email" class="inputField" id="emailInput" placeholder="Enter Your Email" required>
+        </div>
+        <label class="inputValidation invalid" id="emailValidation" data-validation="false"></label>
+
+        <div class="inputDiv">
+            <label class="inputLabel">Card:</label>
+            <input name="card" type="text" class="inputField" id="cardInput" placeholder="Enter a Proxy Credit Card Number." required>
+        </div>
+        <label class="inputValidation invalid" id="cardValidation" data-validation="false"></label>
+
+        <button class="submitBtn" type="submit" id="submitBtn">Submit</button>
+
+    </div>
+
+</div>
